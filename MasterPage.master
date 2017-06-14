@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel = "stylesheet" type ="text/css" href ="stylesheet.css" />  
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: left;
+        }
+        .style3
+        {
+            width: 660px;
+            height: 417px;
+        }
+
+        .style5
+        {
+            height: 417px;
+        }
+        .style6
+        {
+            color: #FF3399;
+            text-decoration: underline;
+        }
+        .style7
+        {
+            text-decoration: underline;
+        }
+        .style8
+        {
+            color: #FF3399;
+        }
+
+        .style10
+        {
+            color: #660066;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .style11
+        {
+            height: 417px;
+            width: 154px;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style2" colspan="3">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/w-h-logo.png" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style11">
+                <asp:Menu ID="Menu1" runat="server" BackColor="#F7F6F3" CssClass="style10" 
+                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="Small" 
+                    ForeColor="#7C6F57" StaticSubMenuIndent="10px">
+                    <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                    <DynamicSelectedStyle BackColor="#5D7B9D" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/HomePage.aspx" Text="Home" Value="Home">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Doctor.aspx" Text="Docter" Value="Docter">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Patient.aspx" Text="Patient" Value="Patient">
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Prescription.aspx" Text="Prescription" 
+                            Value="Prescription"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                </asp:Menu>
+            </td>
+            <td class="style3">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+            <td class="style5">
+            </td>
+        </tr>
+        <tr>
+            <td class="style4" colspan="3">
+                <span class="style6"><strong>C</strong></span><span class="style6" 
+                    style="font-size: 11.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-theme-font: minor-fareast; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: JA; mso-bidi-language: AR-SA"><strong>ontact 
+                us:</strong></span><span style="font-size:11.0pt;font-family:&quot;Times New Roman&quot;,serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-theme-font:minor-fareast;
+color:black;mso-themecolor:text1;mso-ansi-language:EN-US;mso-fareast-language:
+JA;mso-bidi-language:AR-SA"><br />
+                </span><span class="style8" 
+                    style="font-size: 11.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-theme-font: minor-fareast; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: JA; mso-bidi-language: AR-SA">
+                <span class="style7"><strong>phone:</strong></span></span><span id="style9" 
+                    style="font-size: 11.0pt; font-family: &quot;Times New Roman&quot;,serif; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-theme-font: minor-fareast; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: JA; mso-bidi-language: AR-SA"><strong> 
+                0554108911<br />
+                </span><span class="style8" 
+                    style="font-size: 11.0pt; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-theme-font: minor-fareast; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: JA; mso-bidi-language: AR-SA">
+                <span class="style7">E-mail:</span></span><span id="style9" 
+                    style="font-size: 11.0pt; font-family: &quot;Times New Roman&quot;,serif; mso-fareast-font-family: &quot;Times New Roman&quot;; mso-fareast-theme-font: minor-fareast; mso-themecolor: text1; mso-ansi-language: EN-US; mso-fareast-language: JA; mso-bidi-language: AR-SA"> 
+                w-hospital@gmail.com</span></strong></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
